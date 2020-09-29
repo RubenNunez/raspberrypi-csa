@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PostBuildEvent>cd "$(TargetDir)" "$(SolutionDir)\SecureUpload.exe" . raspberrypi:/home/pi/apps/$(ProjectName)
+        </PostBuildEvent>
+    </PropertyGroup>
+
+</Project>
