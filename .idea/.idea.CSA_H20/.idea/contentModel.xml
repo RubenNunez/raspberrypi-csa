@@ -7,7 +7,14 @@
       <e p="CSA_GAME" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CSA_GAME.csproj" t="IncludeRecursive" />
-        <e p="deploy.bat" t="Include" />
+        <e p="Explorer700" t="Include">
+          <e p="Explorer700.cs" t="Include" />
+          <e p="LedBase.cs" t="Include" />
+          <e p="LedGpio.cs" t="Include" />
+          <e p="LedI2C.cs" t="Include" />
+          <e p="Leds.cs" t="Include" />
+          <e p="Pcf8574.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -16,6 +23,9 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Tools" t="Include">
+          <e p="deploy.bat" t="Include" />
+        </e>
       </e>
       <e p="CSA_H20.sln" t="IncludeFlat" />
       <e p="CSA_SW02" t="IncludeRecursive">
