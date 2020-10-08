@@ -4,6 +4,7 @@
     <projectFile>SW01/SW01.csproj</projectFile>
     <projectFile>CSA_SW03/CSA_SW03.csproj</projectFile>
     <projectFile>CSA_GAME/CSA_GAME.csproj</projectFile>
+    <projectFile>CSA_SW02/CSA_SW02.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand />
@@ -11,20 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55073a31-4b23-48f1-a5b9-18bcc3fd503d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSA_H20.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSA_SW02/CSA_SW02.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSA_SW02/SW02/A.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSA_SW02/SW02/B.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSA_SW02/SW02/StringList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecureUpload.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CSA_H20/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CSA_H20/v16/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSA_GAME/deploy.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSA_SW02/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSA_GAME/CSA_GAME.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_GAME/CSA_GAME.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSA_GAME/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_GAME/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/CSA_SW02/SW02/A.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CSA_SW02/SW02/B.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CSA_SW02/SW02/StringList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSA_GAME/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,31 +48,38 @@
         <option value="$PROJECT_DIR$/CSA/SW02/A.cs" />
         <option value="$PROJECT_DIR$/CSA/SW02/B.cs" />
         <option value="$PROJECT_DIR$/CSA_SW03/Program.cs" />
-        <option value="$PROJECT_DIR$/CSA_GAME/Program.cs" />
         <option value="$PROJECT_DIR$/CSA_GAME/CSA_GAME.csproj" />
+        <option value="$PROJECT_DIR$/CSA_GAME/Program.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1hYMPbti5bUg6kfkAmRPLrl6rpd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.5007752" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Publish to custom server.Publish CSA_GAME to custom server">
+  <component name="RunManager" selected=".NET Project.CSA_GAME">
     <configuration name="Publish CSA_GAME to folder" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
       <riderPublish uuid_high="-1330552662587062317" uuid_low="-8362795416993139038" />
       <method v="2" />
@@ -157,6 +160,21 @@
       <riderPublish uuid_high="-1330552662587062317" uuid_low="-8362795416993139038" />
       <method v="2" />
     </configuration>
+    <configuration name="CSA_SW02" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CSA_SW02/CSA_SW02.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="CSA_SW02" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Publish to custom server.Publish CSA_GAME to custom server" />
@@ -175,8 +193,32 @@
       <updated>1600183551972</updated>
       <workItem from="1600183559705" duration="2454000" />
       <workItem from="1600781858841" duration="6143000" />
-      <workItem from="1601386304192" duration="1625000" />
+      <workItem from="1601386304192" duration="6690000" />
+      <workItem from="1601410518433" duration="3433000" />
+      <workItem from="1601415302018" duration="4526000" />
+      <workItem from="1601419947230" duration="748000" />
+      <workItem from="1601421371580" duration="415000" />
+      <workItem from="1601422156822" duration="486000" />
+      <workItem from="1601473506292" duration="63000" />
+      <workItem from="1601473604312" duration="413000" />
+      <workItem from="1601474048143" duration="1363000" />
+      <workItem from="1601475445282" duration="1844000" />
     </task>
+    <task id="LOCAL-00001" summary="sw03 install raspberrypi development">
+      <created>1601399520273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601399520273</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sw03 add unversioned files">
+      <created>1601399569229</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601399569229</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,33 +239,121 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="sw03 install raspberrypi development" />
+    <MESSAGE value="sw03 add unversioned files" />
+    <option name="LAST_COMMIT_MESSAGE" value="sw03 add unversioned files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="190" key="#Deployment" timestamp="1601399278188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="190" key="#Deployment/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601399278188" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1600842897239">
+    <state x="414" y="174" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601411040431">
       <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601411040431" />
+    <state x="728" y="298" width="463" height="599" key="#com.intellij.tools.ToolEditorDialog" timestamp="1601420312176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="728" y="298" width="463" height="599" key="#com.intellij.tools.ToolEditorDialog/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601420312176" />
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1601410153573">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1231" height="191" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@-1920.0.1920.1040" timestamp="1600640000964" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@0.0.1920.1040" timestamp="1600842897239" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1600842897238">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153573" />
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401321851" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1601410153573">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1231" height="191" key="GridCell.Tab.0.center/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@-1920.0.1920.1040" timestamp="1600640000964" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@0.0.1920.1040" timestamp="1600842897238" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1600842897238">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153573" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401321850" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1601410153572">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1231" height="191" key="GridCell.Tab.0.left/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@-1920.0.1920.1040" timestamp="1600640000964" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@0.0.1920.1040" timestamp="1600842897238" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1600842897239">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153572" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401321850" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1601410153573">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1231" height="191" key="GridCell.Tab.0.right/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@-1920.0.1920.1040" timestamp="1600640000964" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@0.0.1920.1040" timestamp="1600842897239" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153573" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401321850" />
+    <state width="1877" height="278" key="GridCell.Tab.1.bottom" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.bottom/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401331539" />
+    <state width="1877" height="278" key="GridCell.Tab.1.center" timestamp="1601410153573">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.center/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153573" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401331538" />
+    <state width="1877" height="278" key="GridCell.Tab.1.left" timestamp="1601410153573">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.left/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153573" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401331538" />
+    <state width="1877" height="278" key="GridCell.Tab.1.right" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.1.right/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601401331538" />
+    <state width="1877" height="278" key="GridCell.Tab.2.bottom" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.bottom/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="278" key="GridCell.Tab.2.center" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.center/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="278" key="GridCell.Tab.2.left" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.left/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="278" key="GridCell.Tab.2.right" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.2.right/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="278" key="GridCell.Tab.3.bottom" timestamp="1601410153575">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.3.bottom/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153575" />
+    <state width="1877" height="278" key="GridCell.Tab.3.center" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.3.center/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="278" key="GridCell.Tab.3.left" timestamp="1601410153574">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.3.left/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153574" />
+    <state width="1877" height="278" key="GridCell.Tab.3.right" timestamp="1601410153575">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.3.right/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153575" />
+    <state width="1877" height="278" key="GridCell.Tab.4.bottom" timestamp="1601410153576">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.4.bottom/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153576" />
+    <state width="1877" height="278" key="GridCell.Tab.4.center" timestamp="1601410153575">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.4.center/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153575" />
+    <state width="1877" height="278" key="GridCell.Tab.4.left" timestamp="1601410153575">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.4.left/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153575" />
+    <state width="1877" height="278" key="GridCell.Tab.4.right" timestamp="1601410153575">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="278" key="GridCell.Tab.4.right/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601410153575" />
     <state x="611" y="297" key="Rider.ProjectTemplateDialog.Size" timestamp="1601398733547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,5 +364,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="221" key="RiderGenerateDialog/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@0.0.1920.1040" timestamp="1600788247505" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1601473569114">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/-1920.0.1920.1040/-3200.0.1280.760/0.0.1920.1040@0.0.1920.1040" timestamp="1601422623404" />
+    <state x="-1459" y="164" key="SettingsEditor/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1601409154893" />
+    <state x="461" y="164" key="SettingsEditor/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601473569114" />
+    <state x="514" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601420085960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="514" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-3200.0.1280.760/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601420085960" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CSA_GAME/Program.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\Ruben\OneDrive\HSLU\CSA\CSA_H20\CSA_GAME\Program.cs" initialLine="10">
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
