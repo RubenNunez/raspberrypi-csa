@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Explorer700_Demo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ressources\AsciiFontPng" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Ressources\AsciiFontPng" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Explorer700Library\Explorer700Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Ressources\test.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="cd $(TargetDir)&#xD;&#xA;$(SolutionDir)\SecureUpload.exe . pi-csa:netcore/$(ProjectName)" />
+  </Target>
+
+</Project>

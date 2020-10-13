@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Explorer700Library.Joystick">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAABAAI=</HashCode>
+      <FileName>Joystick\Joystick.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pcf8574" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Explorer700Library.KeyEventArgs">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Joystick\KeyEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Explorer700Library.Explorer700">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAQAIAAAAAAAAAAAAAQAAAAAAAAAAAAAABAABAAA=</HashCode>
+      <FileName>Explorer700.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Joystick" />
+      <Property Name="Pcf8574" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Explorer700Library.Pcf8574">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAgAAgAAAAAAAAAACQAAEAgAA=</HashCode>
+      <FileName>Pcf8574.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Explorer700Library.Keys">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAIAAAAAAAAAAAACACAAAAIAAI=</HashCode>
+      <FileName>Joystick\Keys.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

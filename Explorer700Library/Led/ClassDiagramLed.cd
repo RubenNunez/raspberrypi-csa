@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Explorer700Library.LedBase">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Led\LedBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Explorer700Library.LedGpio">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Led\LedGpio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Explorer700Library.Explorer700">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAQAIAAAAAAAAAAAAAQAAAAAAAAAAAAAABAABAAA=</HashCode>
+      <FileName>Explorer700.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Led1" />
+      <Property Name="Pcf8574" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Explorer700Library.LedI2C">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Led\LedI2C.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pcf8574" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Explorer700Library.Pcf8574">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAgAAgAAAAAAAAAACQAAEAgAA=</HashCode>
+      <FileName>Pcf8574.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Explorer700Library.Leds">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Led\Leds.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
