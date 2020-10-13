@@ -1,18 +1,18 @@
 ﻿// https://github.com/unosquare/raspberryio/tree/master/src/Unosquare.RaspberryIO.Peripherals
 
+#nullable enable
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Unosquare.RaspberryIO;
 using Unosquare.RaspberryIO.Abstractions;
 
-namespace Explorer700Library
+namespace Explorer700Library.Display
 {
     public class SSD1306 : IDisposable
     {

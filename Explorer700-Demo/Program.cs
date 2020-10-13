@@ -5,6 +5,7 @@
 using Explorer700Library;
 using System;
 using System.Drawing;
+using Explorer700Library.Joystick;
 
 namespace Explorer700_Demo
 {

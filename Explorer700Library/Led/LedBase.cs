@@ -2,11 +2,8 @@
 // CSA - C# in Action
 // (c) 2020, Christian Jost, HSLU
 // ----------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Explorer700Library
+namespace Explorer700Library.Led
 {
     public abstract class LedBase
     {

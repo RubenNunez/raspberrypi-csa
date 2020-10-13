@@ -2,17 +2,13 @@
 // CSA - C# in Action
 // (c) 2020, Christian Jost, HSLU
 // ----------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+
 using System.Drawing;
-using System.Text;
 using System.Threading;
 using Unosquare.RaspberryIO;
 using Unosquare.RaspberryIO.Abstractions;
-using Unosquare.RaspberryIO.Peripherals;
 
-namespace Explorer700Library
+namespace Explorer700Library.Display
 {
     public class Display
     {

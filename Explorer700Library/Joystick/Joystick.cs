@@ -2,13 +2,14 @@
 // CSA - C# in Action
 // (c) 2020, Christian Jost, HSLU
 // ----------------------------------------------------------------------------
+
 using System;
 using System.Diagnostics;
 using System.Threading;
 using Unosquare.RaspberryIO;
 using Unosquare.RaspberryIO.Abstractions;
 
-namespace Explorer700Library
+namespace Explorer700Library.Joystick
 {
     public class Joystick
     {

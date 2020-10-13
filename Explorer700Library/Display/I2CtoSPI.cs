@@ -2,12 +2,13 @@
 // CSA - C# in Action
 // (c) 2020, Christian Jost, HSLU
 // ----------------------------------------------------------------------------
+
 using System;
 using System.Reflection;
 using Unosquare.RaspberryIO.Abstractions;
 using Unosquare.WiringPi.Native;
 
-namespace Explorer700Library
+namespace Explorer700Library.Display
 {
     internal class I2CtoSPI : II2CDevice
     {

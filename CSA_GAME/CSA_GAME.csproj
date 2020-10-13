@@ -13,4 +13,17 @@
       <PackageReference Include="Unosquare.WiringPi" Version="0.5.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Explorer700Library\Explorer700Library.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Ressources\AsciiFontPng" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Ressources\test.png" />
+      <Resource Include="Ressources\test.png" />
+    </ItemGroup>
+
 </Project>
