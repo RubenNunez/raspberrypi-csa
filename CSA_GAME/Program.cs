@@ -8,13 +8,13 @@ using Explorer700Library.Joystick;
 
 namespace CSA_GAME
 {
-    class Program
+    internal class Program
     {
-        private const int TIME_WAITING_FOR_DEBUGGER = 0;
+        private const int TIME_WAITING_FOR_DEBUGGER = 20;
 
         // Build App    dotnet build
         // Run App      dotnet run --project CSA_GAME
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var time = 0;
             Console.WriteLine("waiting for debugger to attach: ");
@@ -27,23 +27,16 @@ namespace CSA_GAME
             Console.WriteLine(string.Empty);
             Console.WriteLine("finish waiting for debugger!");
 
-            var explorer700 = new Explorer700.Explorer700_OLD();
-
-            for (var i = 0; i < 7; i++)
-            {
-                explorer700.Led1.Toggle();
-                explorer700.Led2.Toggle();
-                Thread.Sleep(250);
-            }
+            TestModule();
         }
-        
-        static void TEST(string[] args)
+
+        private static void TestModule()
         {
             Explorer700Library.Explorer700 exp = new Explorer700Library.Explorer700();
 
             // Demo Display
             Graphics g = exp.Display.Graphics;
-            g.DrawImage(Image.FromFile("./Ressources/test.png"), 0, 0);
+            g.DrawImage(Image.FromFile("CSA_GAME/Ressources/test.png"), 0, 0);
             Pen pen = new Pen(Brushes.Black);
             g.DrawEllipse(pen, -10, -10, 30, 30);
             g.DrawEllipse(pen, 30, 10, 10, 10);

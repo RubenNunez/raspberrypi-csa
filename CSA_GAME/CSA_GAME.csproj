@@ -18,7 +18,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Include="Ressources\AsciiFontPng" />
+      <EmbeddedResource Include="Ressources/AsciiFontPng" />
+      <EmbeddedResource Include="Ressources/test.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
     </ItemGroup>
 
 
@@ -26,9 +29,5 @@
         <Exec Command="cd $(TargetDir) &amp;&amp; dir &amp;&amp; $(SolutionDir)SecureUpload.exe . raspberrypi:apps/$(ProjectName) &amp;&amp; echo Done! &amp;&amp; exit 0" />
     </Target>
 
-    <ItemGroup>
-      <None Remove="Ressources\test.png" />
-      <Resource Include="Ressources\test.png" />
-    </ItemGroup>
 
 </Project>

@@ -2,9 +2,7 @@
 // CSA - C# in Action
 // (c) 2020, Christian Jost, HSLU
 // ----------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 using Explorer700Library.Led;
 using Unosquare.RaspberryIO;
 using Unosquare.WiringPi;
