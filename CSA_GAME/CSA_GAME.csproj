@@ -21,6 +21,11 @@
       <EmbeddedResource Include="Ressources\AsciiFontPng" />
     </ItemGroup>
 
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command="cd $(TargetDir) &amp;&amp; dir &amp;&amp; $(SolutionDir)SecureUpload.exe . raspberrypi:apps/$(ProjectName) &amp;&amp; echo Done! &amp;&amp; exit 0" />
+    </Target>
+
     <ItemGroup>
       <None Remove="Ressources\test.png" />
       <Resource Include="Ressources\test.png" />
