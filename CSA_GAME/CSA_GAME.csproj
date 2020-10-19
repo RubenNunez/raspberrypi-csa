@@ -7,6 +7,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Resources\Dino\_idle.png" />
+      <None Remove="Resources\Dino\_run1.png" />
+      <None Remove="Resources\Dino\_run2.png" />
+      <None Remove="Resources\Level\_level.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\Level\_level.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
       <PackageReference Include="Unosquare.Raspberry.IO" Version="0.27.1" />
       <PackageReference Include="Unosquare.RaspberryIO.Peripherals" Version="0.5.0" />
@@ -18,8 +31,17 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Include="Ressources/AsciiFontPng" />
-      <EmbeddedResource Include="Ressources/test.png">
+      <EmbeddedResource Include="Resources\AsciiFontPng" />
+      <EmbeddedResource Include="Resources\Dino\_idle.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\Dino\_run1.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\Dino\_run2.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\test.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </EmbeddedResource>
     </ItemGroup>

@@ -313,23 +313,21 @@ namespace Explorer700Library.Display
             var bitmap = new Bitmap(chars.Length * _fontBitmapCharWidth, _fontBitmapCharHeight);
             var offsetX = 0;
 
-            using (var g = Graphics.FromImage(bitmap))
+            using var g = Graphics.FromImage(bitmap);
+            g.CompositingQuality = CompositingQuality.HighSpeed;
+            g.SmoothingMode = SmoothingMode.None;
+            g.InterpolationMode = InterpolationMode.Low;
+            g.Clear(Color.Black);
+
+            foreach (var c in chars)
             {
-                g.CompositingQuality = CompositingQuality.HighSpeed;
-                g.SmoothingMode = SmoothingMode.None;
-                g.InterpolationMode = InterpolationMode.Low;
-                g.Clear(Color.Black);
-
-                foreach (var c in chars)
-                {
-                    var glyphRect = new Rectangle(c * _fontBitmapCharWidth, 0, _fontBitmapCharWidth,
-                        _fontBitmapCharHeight);
-                    g.DrawImage(FontBitmap, offsetX, 0, glyphRect, GraphicsUnit.Pixel);
-                    offsetX += _fontBitmapCharWidth;
-                }
-
-                g.Flush();
+                var glyphRect = new Rectangle(c * _fontBitmapCharWidth, 0, _fontBitmapCharWidth,
+                    _fontBitmapCharHeight);
+                g.DrawImage(FontBitmap, offsetX, 0, glyphRect, GraphicsUnit.Pixel);
+                offsetX += _fontBitmapCharWidth;
             }
+
+            g.Flush();
 
             return bitmap;
         }
