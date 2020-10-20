@@ -8,6 +8,7 @@ namespace CSA_GAME.Engine
         public int Height;
 
         public static Font Font = new Font(new FontFamily("consolas"), 9, FontStyle.Bold);
+        public static Pen WhitePen = new Pen(Color.White);
 
         public Scene(int height, int width)
         {

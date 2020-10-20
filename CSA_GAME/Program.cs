@@ -41,6 +41,7 @@ namespace CSA_GAME
 
             scene.Children.Add(new Level());
             scene.Children.Add(new Character());
+            scene.Children.Add(new KonamiCheatCode());
             _game = new Engine.Game(scene);
             _gameLoop = new Thread(_game.Start) {Name = "GameLoop"};
             _gameLoop.Start();

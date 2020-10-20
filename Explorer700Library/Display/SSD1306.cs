@@ -53,6 +53,8 @@ namespace Explorer700Library.Display
         private byte _mContrast;
         private bool _mIsActive;
 
+        public bool Invert = false;
+
         #endregion
 
         #region Constructors
@@ -376,7 +378,7 @@ namespace Explorer700Library.Display
         /// <summary>
         /// Clears all the back-buffer pixels.
         /// </summary>
-        public void ClearPixels() => _bitBuffer.SetAll(false);
+        public void ClearPixels() => _bitBuffer.SetAll(Invert);
         public void BlackPixels()
         {
             for (var i = 0; i < _byteBuffer.Length; i++)
@@ -409,7 +411,7 @@ namespace Explorer700Library.Display
                     if (currentPixel == Color.Black) continue;
                     if ((Math.Max(Math.Max(currentPixel.R, currentPixel.G), currentPixel.B) / 255d) >=
                         brightnessThreshold)
-                        _bitBuffer[GetBitIndex(bitmapX - offsetX, bitmapY - offsetY)] = true;
+                        _bitBuffer[GetBitIndex(bitmapX - offsetX, bitmapY - offsetY)] = !Invert;
                 }
             });
         }
@@ -440,7 +442,7 @@ namespace Explorer700Library.Display
         /// <param name="lines">The text lines.</param>
         public void Render(params string[] lines)
         {
-            var outputBytes = new byte[1 + (_bufferPageCount * Width)];
+            var outputBytes = new byte[1 + _bufferPageCount * Width];
             outputBytes[0] = 0x40; // The first byte signals data
 
             Parallel.For(0, lines.Length, lineIndex =>

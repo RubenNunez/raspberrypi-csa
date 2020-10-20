@@ -79,6 +79,11 @@ namespace Explorer700Library.Display
             Graphics.Clear(Color.Black);
             Update();
         }
+
+        public void Invert()
+        {
+            disp.Invert = !disp.Invert;
+        }
         #endregion
     }
 }

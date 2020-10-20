@@ -7,6 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Resources\Dino\_crouch1.png" />
+      <None Remove="Resources\Dino\_crouch2.png" />
       <None Remove="Resources\Dino\_idle.png" />
       <None Remove="Resources\Dino\_run1.png" />
       <None Remove="Resources\Dino\_run2.png" />
@@ -14,6 +16,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Include="Resources\Dino\_crouch1.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\Dino\_crouch2.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
       <EmbeddedResource Include="Resources\Level\_level.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </EmbeddedResource>
