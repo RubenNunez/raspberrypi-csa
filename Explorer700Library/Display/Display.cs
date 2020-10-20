@@ -67,6 +67,13 @@ namespace Explorer700Library.Display
             disp.Render();
         }
 
+        public void Clean()
+        {
+            Graphics.Clear(Color.Black);
+            disp.BlackPixels();
+            disp.ClearPixels();
+        }
+
         public void Clear()
         {
             Graphics.Clear(Color.Black);

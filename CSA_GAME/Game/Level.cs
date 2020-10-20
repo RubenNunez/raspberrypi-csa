@@ -5,7 +5,7 @@ namespace CSA_GAME.Game
 {
     public class Level : GameObject
     {
-        private const int Speed = 2;
+        private const float Speed = 10f;
         private Image _level;
         private Position _lvl1;
 
@@ -21,9 +21,9 @@ namespace CSA_GAME.Game
         public override void Update(Graphics ctx, long deltaTime)
         {
             base.Update(ctx, deltaTime);
-            _lvl1.X -= deltaTime / 10f;
+            _lvl1.X -= deltaTime / Speed;
 
-            _lvl1.X %= _level.Width - Engine.Game.Instance.Scene.Width;
+            _lvl1.X %= _level.Width - Engine.Game.Instance.Scene.Width - 5;
 
             ctx.DrawImage(_level, _lvl1.X, Engine.Game.Instance.Scene.Height - (_level.Height + 2));
         }

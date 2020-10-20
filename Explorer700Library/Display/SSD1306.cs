@@ -377,6 +377,13 @@ namespace Explorer700Library.Display
         /// Clears all the back-buffer pixels.
         /// </summary>
         public void ClearPixels() => _bitBuffer.SetAll(false);
+        public void BlackPixels()
+        {
+            for (var i = 0; i < _byteBuffer.Length; i++)
+            {
+               Buffer.SetByte(_byteBuffer, i, 0x00); 
+            }
+        }
 
         /// <summary>
         /// Loads a bitmap into the bit buffer.
@@ -396,11 +403,9 @@ namespace Explorer700Library.Display
             // for (var bitmapY = offsetY; bitmapY < offsetY + Height; bitmapY++)
             Parallel.For(offsetY, offsetY + Height, bitmapY =>
             {
-                Color currentPixel;
-
                 for (var bitmapX = offsetX; bitmapX < offsetX + Width; bitmapX++)
                 {
-                    currentPixel = bitmap.GetPixel(bitmapX, bitmapY);
+                    var currentPixel = bitmap.GetPixel(bitmapX, bitmapY);
                     if (currentPixel == Color.Black) continue;
                     if ((Math.Max(Math.Max(currentPixel.R, currentPixel.G), currentPixel.B) / 255d) >=
                         brightnessThreshold)
