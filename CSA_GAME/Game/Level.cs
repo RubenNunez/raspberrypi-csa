@@ -49,7 +49,7 @@ namespace CSA_GAME.Game
             if (_acc > 500 * _randomFactor)
             {
                 _acc = 0;
-                _randomFactor = _random.Next(2, 2 + (int)DinoGame.Speed);
+                _randomFactor = _random.Next(1, 1 + (int)DinoGame.Speed);
                 var index = _random.Next(0, 5);
                 var cactus = _cactuses[index];
                 if (cactus.Passed)

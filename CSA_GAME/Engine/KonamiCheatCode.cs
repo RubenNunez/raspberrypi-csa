@@ -4,6 +4,9 @@ using Explorer700Library.Joystick;
 
 namespace CSA_GAME.Engine
 {
+    /**
+     * In honor of Kazuhisa Hashimoto who created the famous 'Konami Code' RIP 02.2020
+     */
     public class KonamiCheatCode : GameObject
     {
         public static Font Font = new Font(new FontFamily("consolas"), 9, FontStyle.Bold);
