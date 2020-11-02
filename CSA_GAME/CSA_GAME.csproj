@@ -54,6 +54,15 @@
       </EmbeddedResource>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Resources\Cactus\_cactus1.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\Cactus\_cactus2.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <Exec Command="cd $(TargetDir) &amp;&amp; dir &amp;&amp; $(SolutionDir)SecureUpload.exe . raspberrypi:apps/$(ProjectName) &amp;&amp; echo Done! &amp;&amp; exit 0" />

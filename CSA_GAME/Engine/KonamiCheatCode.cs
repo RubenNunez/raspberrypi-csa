@@ -1,10 +1,13 @@
 ﻿using System.Drawing;
+using CSA_GAME.Game;
 using Explorer700Library.Joystick;
 
 namespace CSA_GAME.Engine
 {
     public class KonamiCheatCode : GameObject
     {
+        public static Font Font = new Font(new FontFamily("consolas"), 9, FontStyle.Bold);
+
         private readonly Keys[] _konamiCode = {
             Keys.Up, Keys.Up, Keys.Down, Keys.Down, Keys.Left, Keys.Right, Keys.Left, Keys.Right, Keys.Center,
             Keys.Center
@@ -33,7 +36,7 @@ namespace CSA_GAME.Engine
 
             if (_konamiCode.Length == _cursor + 1)
             {
-                _foundKonamiCode = true; // bravo
+                DinoGame.RequestCheatMode(); _= _foundKonamiCode = true; // bravo
                 Game.Instance.Explorer700.Display.Invert();
             }
         }
@@ -43,7 +46,7 @@ namespace CSA_GAME.Engine
             base.Update(ctx, deltaTime);
             if (_foundKonamiCode)
             {
-                //ctx.DrawRectangle(Scene.WhitePen, new Rectangle(5,5, Game.Instance.Scene.Width - 5, 5));
+                ctx.DrawString("godmode", Font, Brushes.White, 5, 5);
             }
         }
     }

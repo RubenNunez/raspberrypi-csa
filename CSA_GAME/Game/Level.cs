@@ -1,31 +1,69 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using CSA_GAME.Engine;
 
 namespace CSA_GAME.Game
 {
     public class Level : GameObject
     {
-        private const float Speed = 10f;
+        public static event EventHandler CactusEntersCriticalZone;
+
         private Image _level;
         private Position _lvl1;
+        private float _acc;
+        private int _randomFactor;
+        private Random _random;
+        private readonly List<Cactus> _cactuses = new List<Cactus>(5);
 
-        private bool _isRunning = true;
 
         public override void Start()
         {
-            base.Start();
             _level = Image.FromFile("CSA_GAME/Resources/Level/_level.png");
             _lvl1.X = 0;
+            _random = new Random();
+
+            for (var i = 0; i < 5; i++)
+            {
+                var cactus = new Cactus();
+                _cactuses.Add(cactus);
+                Children.Add(cactus);
+            }
+
+            base.Start();
         }
 
         public override void Update(Graphics ctx, long deltaTime)
         {
-            base.Update(ctx, deltaTime);
-            _lvl1.X -= deltaTime / Speed;
-
+            _lvl1.X -= deltaTime / DinoGame.Speed;
             _lvl1.X %= _level.Width - Engine.Game.Instance.Scene.Width - 5;
 
             ctx.DrawImage(_level, _lvl1.X, Engine.Game.Instance.Scene.Height - (_level.Height + 2));
+
+            GenerateCactuses(deltaTime);
+
+            base.Update(ctx, deltaTime);
+        }
+
+        private void GenerateCactuses(long deltaTime)
+        {
+            _acc += deltaTime;
+            if (_acc > 500 * _randomFactor)
+            {
+                _acc = 0;
+                _randomFactor = _random.Next(2, 2 + (int)DinoGame.Speed);
+                var index = _random.Next(0, 5);
+                var cactus = _cactuses[index];
+                if (cactus.Passed)
+                    cactus.Play();
+
+            }
+        }
+
+        public static void OnCactusEntersCriticalZone(Cactus cactus)
+        {
+            CactusEntersCriticalZone?.Invoke(cactus, EventArgs.Empty);
+            Console.WriteLine("OnCactusEntersCriticalZone");
         }
     }
 }

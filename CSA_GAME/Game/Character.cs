@@ -40,6 +40,14 @@ namespace CSA_GAME.Game
             Transform.Position.Y = _startPosY;
 
             Engine.Game.Instance.Explorer700.Joystick.JoystickChanged += Jump;
+            Level.CactusEntersCriticalZone += LevelOnCactusEntersCriticalZone;
+        }
+
+        private void LevelOnCactusEntersCriticalZone(object? sender, EventArgs e)
+        {
+            if(!_isGrounded)
+                return;
+            DinoGame.RequestGameOver();
         }
 
         private void Jump(object? sender, KeyEventArgs e)

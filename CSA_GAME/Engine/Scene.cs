@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using CSA_GAME.Game;
 
 namespace CSA_GAME.Engine
 {
@@ -19,8 +20,8 @@ namespace CSA_GAME.Engine
         public override void Update(Graphics ctx, long deltaTime)
         {
             base.Update(ctx, deltaTime);
-            var size = ctx.MeasureString("Scene", Font);
-            ctx.DrawString("Scene", Font, Brushes.White, Width - size.Width, Height / 2 - size.Height);
+            var size = ctx.MeasureString($"{DinoGame.Score:D5}", Font);
+            ctx.DrawString($"{DinoGame.Score:D5}", Font, Brushes.White, Width - size.Width, 5);
             
         }
     }

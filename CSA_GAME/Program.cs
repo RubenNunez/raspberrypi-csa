@@ -35,13 +35,13 @@ namespace CSA_GAME
             //Console.WriteLine(string.Empty);
             //Console.WriteLine("finish testing module.");
 
-
             Console.WriteLine("GameLoop Thread starting");
             var scene = new Scene(64, 128);
 
             scene.Children.Add(new Level());
             scene.Children.Add(new Character());
             scene.Children.Add(new KonamiCheatCode());
+            scene.Children.Add(new DinoGame());
             _game = new Engine.Game(scene);
             _gameLoop = new Thread(_game.Start) {Name = "GameLoop"};
             _gameLoop.Start();
