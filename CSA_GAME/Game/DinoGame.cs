@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Drawing;
 using CSA_GAME.Engine;
 using Explorer700Library.Joystick;
@@ -22,7 +23,7 @@ namespace CSA_GAME.Game
             Engine.Game.Instance.Explorer700.Joystick.JoystickChanged += Restart;
         }
 
-        private void Restart(object? sender, KeyEventArgs e)
+        private static void Restart(object? sender, KeyEventArgs e)
         {
             if (e.Keys == Keys.Center && GameOver)
             {

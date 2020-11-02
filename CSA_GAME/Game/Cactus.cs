@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Drawing;
 using CSA_GAME.Engine;
 
@@ -10,10 +11,9 @@ namespace CSA_GAME.Game
 
         private const float Offset = 10;
         private Image? _cactus;
-        private Position _pos;
         private bool _isPlaying;
         private bool _hasInformedCriticalZone;
-        private Random _random;
+        private Random? _random;
 
         public override void Start()
         {
@@ -21,7 +21,7 @@ namespace CSA_GAME.Game
             _random = new Random();
             _cactus = Image.FromFile(_random.Next(0,100) > 50 
                 ? "CSA_GAME/Resources/Cactus/_cactus1.png" : "CSA_GAME/Resources/Cactus/_cactus2.png");
-            _pos.X = Engine.Game.Instance.Scene.Width + Offset;
+            Transform.Position.X = Engine.Game.Instance.Scene.Width + Offset;
         }
 
         public override void Update(Graphics ctx, long deltaTime)
@@ -29,23 +29,23 @@ namespace CSA_GAME.Game
             base.Update(ctx, deltaTime);
             if(!_isPlaying) return;
 
-            _pos.X -= deltaTime / DinoGame.Speed;
+            Transform.Position.X -= deltaTime / DinoGame.Speed;
 
-            if (_pos.X + _pos.X + _cactus.Width < 0)
+            if (Transform.Position.X + Transform.Position.X + _cactus.Width < 0)
             {
                 Passed = true;
                 _isPlaying = false;
-                _pos.X = Engine.Game.Instance.Scene.Width + Offset;
+                Transform.Position.X = Engine.Game.Instance.Scene.Width + Offset;
                 return;
             }
 
-            if (_pos.X < 10 && !_hasInformedCriticalZone)
+            if (Transform.Position.X < 10 && !_hasInformedCriticalZone)
             {
                 Level.OnCactusEntersCriticalZone(this);
                 _hasInformedCriticalZone = true;
             }
 
-            ctx.DrawImage(_cactus, _pos.X, Engine.Game.Instance.Scene.Height - (_cactus.Height + 2));
+            ctx.DrawImage(_cactus, Transform.Position.X, Engine.Game.Instance.Scene.Height - (_cactus.Height + 2));
         }
 
         public void Play()

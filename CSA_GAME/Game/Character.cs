@@ -98,7 +98,6 @@ namespace CSA_GAME.Game
                     Engine.Game.Instance.Scene.Height - Transform.Position.Y);
             else
                 ctx.DrawImage(_idle, Transform.Position.X, Engine.Game.Instance.Scene.Height - Transform.Position.Y);
-            
         }
     }
 }

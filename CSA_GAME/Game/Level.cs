@@ -10,17 +10,15 @@ namespace CSA_GAME.Game
         public static event EventHandler CactusEntersCriticalZone;
 
         private Image _level;
-        private Position _lvl1;
         private float _acc;
         private int _randomFactor;
         private Random _random;
         private readonly List<Cactus> _cactuses = new List<Cactus>(5);
 
-
         public override void Start()
         {
             _level = Image.FromFile("CSA_GAME/Resources/Level/_level.png");
-            _lvl1.X = 0;
+            Transform.Position.X = 0;
             _random = new Random();
 
             for (var i = 0; i < 5; i++)
@@ -35,10 +33,10 @@ namespace CSA_GAME.Game
 
         public override void Update(Graphics ctx, long deltaTime)
         {
-            _lvl1.X -= deltaTime / DinoGame.Speed;
-            _lvl1.X %= _level.Width - Engine.Game.Instance.Scene.Width - 5;
+            Transform.Position.X -= deltaTime / DinoGame.Speed;
+            Transform.Position.X %= _level.Width - Engine.Game.Instance.Scene.Width - 5;
 
-            ctx.DrawImage(_level, _lvl1.X, Engine.Game.Instance.Scene.Height - (_level.Height + 2));
+            ctx.DrawImage(_level, Transform.Position.X, Engine.Game.Instance.Scene.Height - (_level.Height + 2));
 
             GenerateCactuses(deltaTime);
 
@@ -56,7 +54,6 @@ namespace CSA_GAME.Game
                 var cactus = _cactuses[index];
                 if (cactus.Passed)
                     cactus.Play();
-
             }
         }
 

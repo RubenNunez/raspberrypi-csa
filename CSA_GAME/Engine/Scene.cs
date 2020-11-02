@@ -9,7 +9,6 @@ namespace CSA_GAME.Engine
         public int Height;
 
         public static Font Font = new Font(new FontFamily("consolas"), 9, FontStyle.Bold);
-        public static Pen WhitePen = new Pen(Color.White);
 
         public Scene(int height, int width)
         {
@@ -22,7 +21,6 @@ namespace CSA_GAME.Engine
             base.Update(ctx, deltaTime);
             var size = ctx.MeasureString($"{DinoGame.Score:D5}", Font);
             ctx.DrawString($"{DinoGame.Score:D5}", Font, Brushes.White, Width - size.Width, 5);
-            
         }
     }
 }
