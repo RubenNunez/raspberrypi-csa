@@ -6,9 +6,26 @@
         <StartupObject>CSA_GAME.Program</StartupObject>
     </PropertyGroup>
 
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="cd $(TargetDir) &amp;&amp; dir &amp;&amp; $(SolutionDir)SecureUpload.exe . raspberrypi:apps/$(ProjectName) &amp;&amp; echo Done! &amp;&amp; exit 0" />
-    </Target>
+    <ItemGroup>
+      <None Remove="Resources\Dino\_crouch1.png" />
+      <None Remove="Resources\Dino\_crouch2.png" />
+      <None Remove="Resources\Dino\_idle.png" />
+      <None Remove="Resources\Dino\_run1.png" />
+      <None Remove="Resources\Dino\_run2.png" />
+      <None Remove="Resources\Level\_level.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\Dino\_crouch1.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\Dino\_crouch2.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\Level\_level.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
@@ -16,5 +33,40 @@
       <PackageReference Include="Unosquare.RaspberryIO.Peripherals" Version="0.5.0" />
       <PackageReference Include="Unosquare.WiringPi" Version="0.5.1" />
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Explorer700Library\Explorer700Library.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\AsciiFontPng" />
+      <EmbeddedResource Include="Resources\Dino\_idle.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\Dino\_run1.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\Dino\_run2.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\test.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Resources\Cactus\_cactus1.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\Cactus\_cactus2.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command="cd $(TargetDir) &amp;&amp; dir &amp;&amp; $(SolutionDir)SecureUpload.exe . raspberrypi:apps/$(ProjectName) &amp;&amp; echo Done! &amp;&amp; exit 0" />
+    </Target>
+
 
 </Project>

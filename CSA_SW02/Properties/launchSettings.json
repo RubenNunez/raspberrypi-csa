@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "CSA_SW02": {
-      "commandName": "Project",
-      "remoteDebugEnabled": false
-    }
-  }
-}

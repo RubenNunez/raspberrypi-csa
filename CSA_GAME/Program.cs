@@ -1,19 +1,25 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
+using CSA_GAME.Engine;
+using CSA_GAME.Game;
+
 // ReSharper disable InconsistentNaming
 
 namespace CSA_GAME
 {
-    class Program
+    internal class Program
     {
-        private const int TIME_WAITING_FOR_DEBUGGER = 25;
+        private const int TIME_WAITING_FOR_DEBUGGER = 20;
+        private static Engine.Game _game;
+        private static Thread _gameLoop;
 
-        static void Main(string[] args)
+        // Build App    dotnet build
+        // Run App      dotnet run --project CSA_GAME
+        private static void Main(string[] args)
         {
-            var time = 0;
+            /*var time = 0;
             Console.WriteLine("waiting for debugger to attach: ");
-            Thread.Sleep(5 * 1000);
             while (!Debugger.IsAttached & time < TIME_WAITING_FOR_DEBUGGER)
             {
                 Console.Write("▉");
@@ -21,16 +27,24 @@ namespace CSA_GAME
                 Thread.Sleep(1000);
             }
             Console.WriteLine(string.Empty);
-            Console.WriteLine("Prg End");
+            Console.WriteLine("finish waiting for debugger!");*/
 
-            var explorer700 = new Explorer700.Explorer700();
 
-            for (var i = 0; i < 7; i++)
-            {
-                explorer700.Led1.Toggle();
-                explorer700.Led2.Toggle();
-                Thread.Sleep(250);
-            }
+            //Console.WriteLine("start testing module.");
+            //Test.Module();
+            //Console.WriteLine(string.Empty);
+            //Console.WriteLine("finish testing module.");
+
+            Console.WriteLine("GameLoop Thread starting");
+            var scene = new Scene(64, 128);
+
+            scene.Children.Add(new Level());
+            scene.Children.Add(new Character());
+            scene.Children.Add(new KonamiCheatCode());
+            scene.Children.Add(new DinoGame());
+            _game = new Engine.Game(scene);
+            _gameLoop = new Thread(_game.Start) {Name = "GameLoop"};
+            _gameLoop.Start();
         }
     }
 }

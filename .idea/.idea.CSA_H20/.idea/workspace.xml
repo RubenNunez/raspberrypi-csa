@@ -5,6 +5,7 @@
     <projectFile>CSA_SW03/CSA_SW03.csproj</projectFile>
     <projectFile>CSA_GAME/CSA_GAME.csproj</projectFile>
     <projectFile>CSA_SW02/CSA_SW02.csproj</projectFile>
+    <projectFile>Explorer700-Demo/Explorer700-Demo.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand />
@@ -12,14 +13,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55073a31-4b23-48f1-a5b9-18bcc3fd503d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.vs/CSA_H20/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/CSA_H20/v16/.suo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSA_GAME/deploy.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSA_SW02/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSA_H20/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSA_GAME/CSA_GAME.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_GAME/CSA_GAME.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSA_GAME/Explorer700/Explorer700.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_GAME/Explorer700/Explorer700_OLD.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSA_GAME/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_GAME/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSA_H20.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_H20.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700-Demo/Explorer700-Demo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700-Demo/Explorer700-Demo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700-Demo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700-Demo/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700-Demo/Ressources/AsciiFontPng" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_GAME/Ressources/AsciiFontPng" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700-Demo/Ressources/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/CSA_GAME/Ressources/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Display/Display.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Display/Display.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Display/I2CtoSPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Display/I2CtoSPI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Display/SSD1306.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Display/SSD1306.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Explorer700.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Explorer700.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Explorer700Library.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Explorer700Library.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Joystick/Joystick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Joystick/Joystick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Joystick/KeyEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Joystick/KeyEventArgs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Joystick/Keys.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Joystick/Keys.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Led/LedBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Led/LedBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Led/LedGpio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Led/LedGpio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Led/LedI2C.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Led/LedI2C.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Explorer700Library/Led/Leds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Explorer700Library/Led/Leds.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +42,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/on-raspi" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -49,6 +69,18 @@
         <option value="$PROJECT_DIR$/CSA/SW02/B.cs" />
         <option value="$PROJECT_DIR$/CSA_SW03/Program.cs" />
         <option value="$PROJECT_DIR$/CSA_GAME/CSA_GAME.csproj" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Display/SSD1306.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Display/Display.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Display/I2CtoSPI.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Joystick/Joystick.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Joystick/KeyEventArgs.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Joystick/Keys.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Led/LedBase.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Led/LedGpio.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Led/LedI2C.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Led/Leds.cs" />
+        <option value="$PROJECT_DIR$/Explorer700Library/Explorer700.cs" />
+        <option value="$PROJECT_DIR$/CSA_GAME/Explorer700/Explorer700_OLD.cs" />
         <option value="$PROJECT_DIR$/CSA_GAME/Program.cs" />
       </list>
     </option>
@@ -138,6 +170,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Explorer700-Demo" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Explorer700-Demo/Explorer700-Demo.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="SW01" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -203,6 +253,7 @@
       <workItem from="1601473604312" duration="413000" />
       <workItem from="1601474048143" duration="1363000" />
       <workItem from="1601475445282" duration="1844000" />
+      <workItem from="1602599169526" duration="492000" />
     </task>
     <task id="LOCAL-00001" summary="sw03 install raspberrypi development">
       <created>1601399520273</created>
@@ -380,15 +431,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CSA_GAME/Program.cs</url>
-          <line>13</line>
-          <properties documentPath="C:\Users\Ruben\OneDrive\HSLU\CSA\CSA_H20\CSA_GAME\Program.cs" initialLine="10">
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
+          <line>18</line>
+          <properties documentPath="C:\Users\Ruben\OneDrive\HSLU\CSA\CSA_H20\CSA_GAME\Program.cs" initialLine="10" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
